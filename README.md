@@ -1,64 +1,39 @@
-<div align="center">
-    <img src="https://github.com/Hypfer/Valetudo/blob/master/assets/logo/valetudo_logo_with_name.svg" width="800" alt="valetudo">
-    <p align="center"><h2>Free your vacuum from the cloud</h2></p>
-</div>
+# Fork of [`Hypfer/Valetudo`](https://github.com/Hypfer/Valetudo)
 
-Valetudo is a cloud replacement for vacuum robots enabling local-only operation. It is not a custom firmware.<br/>
-Here's a diagram illustrating the core operation principle:
+> **Warning**: This is a personal fork from a third-party.
+>
+> **This fork is NOT affiliated with the author or the the main repository. It's not recommended for use.**
 
-[<img src="https://github.com/Hypfer/valetudo/raw/master/docs/_pages/general/img/operation_principle.png" height=450>](https://github.com/Hypfer/valetudo/raw/master/docs/_pages/general/img/operation_principle.png)
+Please use the [**original version**](https://github.com/Hypfer/Valetudo), <br>
+and refer to the official website at **https://valetudo.cloud**.
 
-Because Valetudo is not a custom firmware, it cannot change anything about how the robot operates.<br/>
-What it can do however is protect your data and enable you to connect your robot
-to your home automation system without having to detour through a vendor cloud, which,
-apart from the whole data problematic, might not be reachable due to your internet connection
-being down or some servers in the datacenter being on fire.
+"Valetudo" and the Valetudo Logo are trademarks of [Hypfer](https://github.com/Hypfer).
 
-Not having to leave your local network of course also benefits the latency of commands, status reports etc.
+---
 
-Valetudo aims to be proof that easy to use and reliable smart appliances are possible without any cloud and/or account requirements.
-Maybe at some point it might help convince vendors that there is another way of doing things.
+**This fork NOT intended for public use**
 
-By default, Valetudo provides control over your vacuum robot via a **responsive webinterface** that works on all of your devices.
-It can be used on phones, tablets as well as your desktop computer.
+> No support, documentation, guarantees or changelogs are provided for this fork.
+> 
+> Check the upstream version here: https://github.com/Hypfer/Valetudo
 
+**Q: Is `valet-dev` related in any way to the Valetudo project?**
 
-Furthermore, there's a **REST-interface** documented with **Swagger UI** as well as **MQTT**.
-With support for both **Homie** and **Home Assistant Autodiscovery** for MQTT, you should be able to connect Valetudo to
-the open-source smarthome software of your choice.
+> **No**.
+> This fork is not affiliated, associated, authorized, endorsed by, or in any way officially connected to the Valetudo Project or it's author or community.
+> 
+> It is also specifically **NOT** an attempt to take over, or develop any sort of community around it. <br>It is a project to implement niche features, that were desired by the forker, which are not desired in the original project.
+>
+> **the [original project](https://github.com/Hypfer/Valetudo) is recommended to be used by everyone else**, please go [there](https://github.com/Hypfer/Valetudo).
 
-For more information, check out the [newcomer guide](https://valetudo.cloud/pages/general/newcomer-guide.html),
-the [getting started guide](https://valetudo.cloud/pages/general/getting-started.html) 
-and also the docs in general at [https://valetudo.cloud](https://valetudo.cloud)
+**Q: Why is this on GitHub if it's not intended for others to use?**
 
-There, you will find a list of [supported robots](https://valetudo.cloud/pages/general/supported-robots.html).
+> Because GitHub Action builds were already configured on the upstream repo. So was easy for the forker to just reuse it here. `¯\_(ツ)_/¯`
 
-## Screenshots
+**Q: License?**
 
-### Phone/Mobile
-<img src="https://user-images.githubusercontent.com/974410/211155741-d6430660-a6b2-48ab-8ddc-2217328444de.png" width=360> <img src="https://user-images.githubusercontent.com/974410/211155635-fdfb5b2b-2c3d-4a49-a0ed-a40deb04708f.png" width=360>
+> Same as upstream, Apache 2.0.
+>
+> **Note**: most of the code on this repository belongs to the [upstream](https://github.com/Hypfer/Valetudo).
 
-<img src="https://user-images.githubusercontent.com/974410/211155650-7cac266c-ffeb-432d-8656-5241a5d6f227.png" width=360> <img src="https://user-images.githubusercontent.com/974410/211155656-d43ee25e-1ae6-432f-95ff-1a39d294828d.png" width=360>
-
-### Tablet/Desktop
-
-![image](https://user-images.githubusercontent.com/974410/211155726-4ca46998-717a-49b4-a7d0-45b0467cc10a.png)
-
-![image](https://user-images.githubusercontent.com/974410/211155836-9199616a-efde-4238-91c4-24158ba67677.png)
-
-![image](https://user-images.githubusercontent.com/974410/211155860-9926b126-d1fe-41b1-8c83-1af21bf8caf2.png)
-
-![image](https://user-images.githubusercontent.com/974410/211155880-ff184776-86fe-4c2f-9556-4d556cfa12f4.png)
-
-
-
-## Further questions?
-[Valetudo Telegram group](https://t.me/+wtIVqHUXoWljMDQy)
-
-
-## Honourable mentions
-
-Valetudo and its companion applications are developed using JetBrains IDEs such as [WebStorm](https://www.jetbrains.com/webstorm/).
-Licenses for those have been provided for free by JetBrains to the project in context of [their open source support program](https://jb.gg/OpenSourceSupport) since multiple years now.
-
-Thanks a lot for that!
+> The [patches by `valet-dev`](https://github.com/valet-dev/valetudo/commits/main?author=valet-dev) on the [`valet-dev/valetudo` repository](https://github.com/valet-dev/valetudo) are licensed as [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/), in addition to Apache 2.0. <br>You are welcome to use any of the aforementioned patches in any way, including to upstream changes to the main repo, no attribution necessary.
