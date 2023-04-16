@@ -3,6 +3,7 @@ module.exports = {
     AutoEmptyDockManualTriggerCapability: require("./AutoEmptyDockManualTriggerCapability"),
     BasicControlCapability: require("./BasicControlCapability"),
     CarpetModeControlCapability: require("./CarpetModeControlCapability"),
+    CleanHistoryCapability: require("./CleanHistoryCapability"),
     CombinedVirtualRestrictionsCapability: require("./CombinedVirtualRestrictionsCapability"),
     ConsumableMonitoringCapability: require("./ConsumableMonitoringCapability"),
     CurrentStatisticsCapability: require("./CurrentStatisticsCapability"),

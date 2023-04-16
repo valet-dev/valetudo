@@ -1,6 +1,7 @@
 module.exports = {
     AutoEmptyDockManualTriggerCapabilityRouter: require("./AutoEmptyDockManualTriggerCapabilityRouter"),
     BasicControlCapabilityRouter: require("./BasicControlCapabilityRouter"),
+    CleanHistoryCapabilityRouter: require("./CleanHistoryCapabilityRouter"),
     CombinedVirtualRestrictionsCapabilityRouter: require("./CombinedVirtualRestrictionsCapabilityRouter"),
     ConsumableMonitoringCapabilityRouter: require("./ConsumableMonitoringCapabilityRouter"),
     DoNotDisturbCapabilityRouter: require("./DoNotDisturbCapabilityRouter"),

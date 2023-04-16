@@ -559,6 +559,20 @@ class RoborockValetudoRobot extends MiioValetudoRobot {
             ourProps
         );
     }
+
+    /**
+     *
+     * @param {number} vendorErrorCode
+     *
+     * @returns {ValetudoRobotError | undefined}
+     */
+    mapErrorCode(vendorErrorCode){
+        // extracted from MAP_ERROR_CODE "No error" case
+        if (vendorErrorCode === 0) {
+            return undefined;
+        }
+        return RoborockValetudoRobot.MAP_ERROR_CODE(vendorErrorCode);
+    }
 }
 
 RoborockValetudoRobot.DEVICE_CONF_PATH = "/mnt/default/device.conf";

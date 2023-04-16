@@ -1,0 +1,109 @@
+{
+  "/api/v2/robot/capabilities/CleanHistoryCapability/records-with-data": {
+    "get": {
+      "tags": [
+        "CleanHistoryCapability"
+      ],
+      "summary": "Get cleaning history records with data",
+      "parameters": [
+        {
+          "in": "query",
+          "name": "after",
+          "description": "The id of the history record preceding the requested",
+          "required": false,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "in": "query",
+          "name": "limit",
+          "description": "The maximum amount of records to return in a single request",
+          "required": false,
+          "schema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 20
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "Ok",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["remaining", "records"],
+                "properties": {
+                  "remaining": {
+                    "type": "integer"
+                  },
+                  "records": {
+                    "type": "object",
+                    "required": ["id", "status", "startTime", "endTime", "statistics"],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "status": {
+                        "type": "integer"
+                      },
+                      "startTime": {
+                        "type": "integer"
+                      },
+                      "endTime": {
+                        "type": "integer"
+                      },
+                      "statistics": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/ValetudoDataPoint"
+                        }
+                      },
+                      "error":{
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "/api/v2/robot/capabilities/CleanHistoryCapability/properties": {
+    "get": {
+      "tags": [
+        "CleanHistoryCapability"
+      ],
+      "summary": "Get various capability-related properties",
+      "responses": {
+        "200": {
+          "description": "Ok",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "availableStatistics": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "time",
+                        "area"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
