@@ -17,6 +17,7 @@ class RoborockS5ValetudoRobot extends RoborockValetudoRobot {
         super(Object.assign({}, options, {fanSpeeds: FAN_SPEEDS}));
 
         [
+            capabilities.RoborockCleanHistoryCapability,
             capabilities.RoborockConsumableMonitoringCapability,
             capabilities.RoborockMapSnapshotCapability,
             capabilities.RoborockCombinedVirtualRestrictionsCapability,
